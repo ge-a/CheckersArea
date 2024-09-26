@@ -1,0 +1,148 @@
+﻿Frontend Test Report
+
+
+Manual testing for entering a checkers area
+1. Join Covey-Town
+2. The CheckersArea with table and chairs is visible on the map
+3. Enter the CheckersArea in Covey-Town with your character
+4. Press the spacebar once inside the area
+5. A modal displaying the checkers board as well as buttons to join as player 1 or 2, resign, show the leaderboard will pop up.
+
+
+Manual testing for join player as player 1
+1. Join Covey-Town
+2. Enter the checkers area and press space
+3. Click the join as player 1 button on one tab
+4. The join as player 1 button will now display “your name (you)”
+5. The join as player 2 button will now display “Waiting on another player …”
+6. The join as player 2 button is inactive and will not respond to clicks
+7. The game will not be playable until another player joins
+
+
+Manual testing for joining with 2 players 
+1. Join Covey-Town on two tabs in the same town
+2. Enter the checkers area and press space on each tab
+3. Click the join as player 1 button on one tab and join as player 2 on another tab
+4. The join as player 1 button will show “your name (you)”, and the join as player 2 button will show the name of your other player
+
+
+Manual testing for turn switching
+1. Join Covey-Town on two tabs in the same town
+2. Enter the checkers area and press space on each tab
+3. Click the join as player 1 button on one tab and join as player 2 on another tab
+4. With player 2, move a black piece at any position
+5. The turn component will now show “red’s turn”
+6. With player 1, move a red piece at any position 
+7. The turn component will now show “black’s turn”
+
+
+Manual testing for red piece count
+1. Join Covey-Town on two tabs in the same town
+2. Enter the checkers area and press space on each tab
+3. Click the join as player 1 button on one tab and join as player 2 on another tab
+4. With player 2, move the black piece at position (5, 2) to (4, 3) 0 indexed
+5. With player 1, move the red piece at position (2, 5) to (3, 4)
+6. With player 2, move the black piece at (4, 3) to (2, 5) 
+7. The red piece count will now be 11
+
+
+Manual testing for black piece count
+1. Join Covey-Town on two tabs in the same town
+2. Enter the checkers area and press space on each tab
+3. Click the join as player 1 button on one tab and join as player 2 on another tab
+4. With player 2, move the black piece at position (5, 2) to (4, 3) 0 indexed
+5. With player 1, move the red piece at position (2, 5) to (3, 4)
+6. With player 2, move the black piece any black piece not at position (4, 3)
+7. With player 1, move the red piece at position (3, 4) to (5, 2)
+8. The black piece count will now be 11
+
+
+Manual testing for resign button
+1. Join Covey-Town on two tabs in the same town
+2. Enter the checkers area and press space on each tab
+3. Click the join as player 1 button on one tab and join as player 2 on another tab
+4. Click the resign button
+5. A modal will pop up showing a button for new game and leaderboard
+
+
+Manual testing for new game button
+1. Join Covey-Town on two tabs in the same town
+2. Enter the checkers area and press space on each tab
+3. Click the join as player 1 button on one tab and join as player 2 on another tab
+4. Click the resign button
+5. Click the new game button
+6. The modal from when you click space upon first entering the area will pop up
+
+
+Manual testing for new game button when only one player has joined
+1. Join Covey-Town 
+2. Enter the checkers area and press space
+3. Click the join as player 1 button 
+4. Click the resign button
+5. Nothing will happen
+
+
+Manual testing for new game button when no players have joined
+1. Join Covey-Town 
+2. Enter the checkers area and press space
+3. Click the resign button
+4. Nothing will happen
+
+
+Manual testing for show leaderboard button when only one player has joined
+1. Join Covey-Town 
+2. Enter the checkers area and press space
+3. Click the join as player 1 button 
+4. Click the show leaderboard button
+5. A prompt saying “P1 and P2 not joined yet appears”
+
+
+Manual testing for show leaderboard button when no players have joined
+1. Join Covey-Town 
+2. Enter the checkers area and press space
+3. Click the resign button
+4. A prompt saying “P1 and P2 not joined yet appears”
+
+
+Manual testing for show leaderboard button when 2 players have joined
+1. Join Covey-Town on two tabs in the same town
+2. Enter the checkers area and press space on each tab
+3. Click the join as player 1 button on one tab and join as player 2 on another tab
+4. Click the show leaderboard button
+5. A leaderboard notification will appear in the top right corner showing P1 and P2 wins
+
+
+Manual testing for show leaderboard button from the resigns screen when 2 players have joined
+1. Join Covey-Town on two tabs in the same town
+2. Enter the checkers area and press space on each tab
+3. Click the join as player 1 button on one tab and join as player 2 on another tab
+4. Click the resign button
+5. Click the show leaderboard button in the next modal
+6. A leaderboard notification will appear in the top right corner showing P1 and P2 wins
+
+
+Manual testing for showing player records next to player names
+1. Join Covey-Town on two tabs in the same town
+2. Enter the checkers area and press space on each tab
+3. Click the join as player 1 button on one tab and join as player 2 on another tab
+4. Click the resign button
+5. Click the show leaderboard button in the next modal
+6. A leaderboard notification will appear in the top right corner showing P1 and P2 wins
+7. After clicking the show leaderboard button, next to player names the record will show
+
+
+Manual testing for updating leaderboard next to player names
+1. Join Covey-Town on two tabs in the same town
+2. Enter the checkers area and press space on each tab
+3. Click the join as player 1 button on one tab and join as player 2 on another tab
+4. Click the resign button
+5. Click the show leaderboard button in the next modal
+6. Click the new game button on the player that resigned
+7. Rejoin the game with both players
+8. Click the show leaderboard button in the next modal on both tabs
+9. Click the resign button
+10. Click the show leaderboard button in the next modal
+11. Click the new game button on the player that resigned
+12. Rejoin the game with both players
+13. Click the show leaderboard button in the next modal on both tabs
+14. The leaderboard record next to player names will update
